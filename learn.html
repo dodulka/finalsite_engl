@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Вивчення слів</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="content-page">
+  <div class="learning">
+    <img id="wordImage" src="" alt="word" style="max-width:100%; border-radius:10px; margin-bottom: 10px;"><br>
+    <h2 id="word"></h2>
+    <button id="learnedBtn">Вивчив це слово</button><br>
+    <a href="test.html">Пройти тест</a><br>
+    <a href="stats.html">Статистика</a><br>
+    <a href="#" onclick="logout()">Вийти</a>
+  </div>
+
+  <script src="main.js"></script>
+  <script src="learn.js"></script>
+  <script>
+    if (!getCurrentUser()) location.href = 'login.html';
+    const word = getRandomWord();
+    document.getElementById('word').innerText = word.en;
+    document.getElementById('wordImage').src = word.img;
+    document.getElementById('learnedBtn').onclick = () => {
+      markLearned(word);
+      location.reload();
+    };
+  </script>
+</body>
+</html>

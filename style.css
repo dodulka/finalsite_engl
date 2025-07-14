@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  padding: 20px;
+  color: #333;
+}
+
+.content-page, .Register-Page {
+  max-width: 400px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px;
+  width: 100%;
+  background: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #218838;
+}
+
+a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.register-link {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #888888;
+  font-size: 0.9em;
+  margin-top: 15px;
+  display: inline-block;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.register-link:hover {
+  color: #00aaff;
+  text-decoration: underline;
+}
+
+.learning div {
+  margin: 15px auto;
+  width: 80%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 15px 15px 15px 0;
+  transition: all 0.3s ease;
+}
+
+.learning div:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.02);
+}
+
+.learning input[type="radio"] {
+  display: none;
+}
+
+.learning label {
+  display: block;
+  padding: 10px 15px;
+  font-size: 1.2em;
+  color: white;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.learning input[type="radio"]:checked + label {
+  color: #00aaff;
+  font-weight: bold;
+}
+
+.learning label {
+  color: #333333;  
+  font-weight: normal;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+.learning input[type="radio"]:checked + label {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.learning input[type="radio"]:not(:checked) + label {
+  color: #333333; 
+}
